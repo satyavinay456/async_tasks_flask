@@ -15,6 +15,8 @@ run the below command to complete asynchronous jobs in reddis server(worker):
 
 rq worker
 
+# Execution
+
 In the root directory execute these commands:
 
 export FLASK_APP=flaskr
