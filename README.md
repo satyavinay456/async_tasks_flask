@@ -17,13 +17,13 @@ rq worker
 
 # Execution
 
-In the root directory execute these commands:
+In the root directory execute these commands for configurations and initialization of DB:
 
 export FLASK_APP=flaskr
 
 export FLASK_ENV=development
 
-Initialize db using => flask init-db
+flask init-db
 
 and then run the application using below command
 
