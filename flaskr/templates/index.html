@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edyst Assignment</title>
+    <link rel="shortcut icon" href="{{url_for('static',filename='img/head_logo.jpg')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bgreen">
+          <a  href="">
+          <img class="logo_sz"  src="{{url_for('static',filename='img/logo.png')}}" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      </nav>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+                <br><br>
+               <center><h5>Please enter the URL address and press "Enter"</h5></center>
+               <input type="text" id="search" placeholder="http://www.example.com" class="form-control"><br>
+
+          </div><br><br>  
+          <div class="col-sm-4">
+            <button id="go_btn"type="button" class="btn btn-info btn_postion">submit</button>
+
+          </div>
+
+      </div>
+      <div class="row">
+        <br>
+        <p id="display_tag" >&nbsp;&nbsp; Pending jobs in queue : <span id="display_search"></span>  </p>
+
+      </div>
+      <br><br>
+      <div class="row">
+        <h4> &nbsp;&nbsp;Results :</h4>
+
+      </div>
+      <div class="row">
+
+
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" >Job id</th>
+                  <th scope="col" >  URL</th>
+                  <th scope="col" > word count</th>
+                  <th scope="col" > submitted on</th>
+                  <th scope="col" > status</th>
+                </tr>
+              </thead>
+              <tbody id="job_rows">
+                <tr>
+                  <td id="job_id">  </td>
+                  <td id="submitted_on">  </td>
+                  <td id="url">  </td>
+                  <td id="word_count">  </td>
+                  <td id="status">  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+
+          </div>
+
+      </div>
+    </div>
+
+  </body>
+  <script src="{{url_for('static',filename='js/job_submission.js')}}"></script>
+  <script src="{{url_for('static',filename='js/read_data.js')}}"></script>
+</html>
