@@ -1,4 +1,5 @@
 # async_tasks_flask
+Here root directory is asysn_tasks_flask-master/
 
 prerequests:
 
@@ -11,13 +12,13 @@ sudo systemctl enable redis-server.service
 # Install the required modules for this web app
 =>pip3 install -r requirements.txt
 
-run the below command to complete asynchronous jobs in reddis server(worker):
+run the below command in the root directory to complete asynchronous jobs in reddis server(worker):
 
 rq worker
 
 # Execution
 
-In the root directory execute these commands for configurations and initialization of DB:
+In the root directory, execute these commands for configurations and initialization of DB:
 
 export FLASK_APP=flaskr
 
